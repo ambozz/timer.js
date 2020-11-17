@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title id="title">timer.js Example</title>
+    <script src="timer.js"></script>
+    <script>
+        function startTimer(){
+            timer.start("%h:%m:%s", "id", true, "00:00:00");
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <a id="id">00:00:00</a>
+        <br>
+        <button onclick="startTimer();">Start</button>
+        <button onclick="timer.pause();">Pause</button>
+        <button onclick="timer.resume();">Resume</button>
+        <button onclick="timer.stop();">Reset</button>
+    </center>
+</body>
+
+</html>
